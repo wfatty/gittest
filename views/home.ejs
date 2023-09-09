@@ -1,0 +1,37 @@
+<%- include('partials/head') %>
+
+    <%- include('partials/navbar') %>
+        <h1>The Home Page <%= 4*4 %>
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptates a dolores asperiores perferendis
+            quis
+            doloremque illo, dignissimos nulla harum similique, inventore facilis itaque. Minus iste ipsum
+            voluptates
+            voluptas adipisci?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dolorum, illo adipisci doloremque cumque
+            necessitatibus quasi sequi accusamus eligendi laudantium laboriosam fuga illum ipsum quos. Quis quos
+            cupiditate
+            assumenda enim?
+            Fugiat dolor quod beatae recusandae explicabo! Perspiciatis maxime iusto asperiores! Officia, illum
+            officiis
+            distinctio, maxime laudantium vitae nisi maiores at blanditiis unde doloremque excepturi saepe quia
+            reiciendis
+            eveniet labore consequuntur!</p>
+
+        <form action="/test" method="get">
+            <label for="get">GET Form</label>
+            <input type="text" name="user_id" placeholder="Enter User ID">
+            <input type="text" name="firstName" placeholder="Enter First Name">
+            <button>Submit</button>
+        </form>
+        <h2>Post</h2>
+
+        <form action="http://localhost:2001/test" method="post">
+            <label for="username">Username</label>
+            <input type="text" name="username">
+            <button>Submit</button>
+        </form>
+
+
+
+        <%- include('partials/footer') %>
